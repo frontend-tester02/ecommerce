@@ -141,9 +141,7 @@ select:-webkit-autofill:focus {
 }
 
 /* SITE-HEADER */
-.site-header {
 
-}
 .site-header__container {
   display: flex;
   align-items: center;
@@ -155,6 +153,10 @@ select:-webkit-autofill:focus {
   flex-shrink: 0;
   margin-right: 56px;
 
+}
+
+.site-header__sitenav {
+  margin-right: auto;
 }
 
 .sitenav__list {
