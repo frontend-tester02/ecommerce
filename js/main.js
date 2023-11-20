@@ -4,6 +4,17 @@ const modifiers = {
   lightboxOpen: 'lightbox--open'
 }
 
+// Menu
+const siteHeader = document.querySelector('.site-header');
+const siteHeaderMenu = document.querySelector('.site-header__toggler');
+
+if (siteHeaderMenu) {
+  siteHeaderMenu.addEventListener('click', function() {
+    siteHeader.classList.toggle('site-header--open')
+  })
+
+}
+
 
 // Shopping cart modal
 const elSiteHeaderCartLink = document.querySelector('.js-site-header-cart-link');
