@@ -11,7 +11,7 @@
 <body>
 
   <!-- SITE-HEADER -->
-  <header class="site-header">
+  <header class="site-header" >
     <div class="container">
       <div class="site-header__container">
         <button class="site-header__toggler" type="button" aria-label="Menu"></button>
@@ -74,7 +74,7 @@
         </div>
 
         <div class="site-header__profile-wrapper">
-          <a href="#" class="site-header__profile-link">
+          <a href="login-page.html" class="site-header__profile-link">
             <img class="site-header__profile-avatar" src="img/profile.jpg" alt="Profile avatar" width="50" height="50" srcset="img/profile.jpg 1x, img/profile@2x.jpg 2x">
           </a>
         </div>
@@ -83,7 +83,7 @@
   </header>
 
   <!-- MAIN-CONTENT -->
-  <main class="main-content" style="display: none;">
+  <main class="main-content">
     <!-- PRODUCT-PAGE -->
     <div class="product-page">
       <div class="product-page__container container">
@@ -129,17 +129,19 @@
             <div class="product-info__manufacturer">Sneaker Company</div>
             <h1 class="product-info__title">Fall Limited Edition Sneakers</h1>
             <p class="product-info__description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-            <div class="product-info__price-wrapper">
-              <b class="product-info__price">$125.00</b>
-              <span class="badge">50%</span>
+            <div class="product-info__price-wrap">
+              <div class="product-info__price-wrapper">
+                <b class="product-info__price">$125.00</b>
+                <span class="badge">50%</span>
+              </div>
+              <del class="product-info__old-price">$250.00</del>
             </div>
-            <del class="product-info__old-price">$250.00</del>
 
             <div class="product-info__cart-actions">
               <div class="product-info__quantity-wrapper">
                 <button type="button" class="product-info__quantity-button js-product-quantity-decrement-button" aria-label="Remove 1">-</button>
                 <div class="product-info__quantity">0</div>
-                <button type="button" class="product-info__quantity-button js-product-quantity-increment-button" aria-label="Add 1">+</button>
+                <button type="button" class="product-info__quantity-button product-info__quantity-button-mr js-product-quantity-increment-button" aria-label="Add 1">+</button>
               </div>
 
               <button type="button" class="button button--wide">

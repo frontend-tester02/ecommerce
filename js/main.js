@@ -33,6 +33,43 @@ if (elSiteHeaderCartLink) {
 
 }
 
+
+
+// LOGIN PAGE
+
+const forms = document.querySelector('.forms'),
+      pwShowHide = document.querySelectorAll('.fa-eye-slash'),
+      links = document.querySelectorAll('.link');
+
+pwShowHide.forEach(eyeIcon => {
+  eyeIcon.addEventListener('click',  () => {
+    let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll('.forms__password');
+
+    pwFields.forEach(password => {
+      if(password.type === "password") {
+        password.type = "text";
+        eyeIcon.classList.replace('fa-regular', 'bx-show');
+        return;
+      }
+      password.type = "password";
+        eyeIcon.classList.replace('bx-show', 'fa-regular');
+    })
+  })
+})
+
+links.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    forms.classList.toggle('show-signup');
+  })
+})
+
+
+
+
+
+
+
 // Image showcase
 const elProductPageGallery = document.querySelector('.product-page__gallery');
 const elImgShowcaseActiveImg = elProductPageGallery.querySelector('.img-showcase__active-img');
